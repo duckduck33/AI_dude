@@ -47,10 +47,15 @@ prompts = [
 @app.post("/chat")
 async def chat_with_openai(request: ChatRequest):
     try:
-        # interest.txt에서 관심사 정보 읽기
-        with open(os.path.join(os.path.dirname(__file__), "interest.txt"), "r", encoding="utf-8") as f:
-            user_interest = f.read().strip()
-
+        # interest.json에서 관심사 정보 읽기
+        with open(os.path.join(os.path.dirname(__file__), "interest.json"), "r", encoding="utf-8") as f:
+            interest_data = json.load(f)
+        
+        # 관심사 정보를 문자열로 변환
+        interests_text = "사용자의 관심사:\n"
+        for interest in interest_data["interests"]:
+            interests_text += f"- {interest['topic']} ({interest['type']}): {interest['description']}\n"
+        
         messages = []
         # 오케스트레이터, AI1, AI2 프롬프트 추가
         for p in prompts:
@@ -58,7 +63,7 @@ async def chat_with_openai(request: ChatRequest):
         # 사용자의 관심사 정보를 system 역할로 추가
         messages.append({
             "role": "system",
-            "content": f"아래는 사용자의 관심사 정보입니다.\n{user_interest}"
+            "content": interests_text
         })
         # AI1이 관심사 기반으로 먼저 말을 걸도록 user 역할 메시지 추가
         messages.append({
