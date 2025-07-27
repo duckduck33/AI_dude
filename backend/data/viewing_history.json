@@ -1,0 +1,70 @@
+{
+  "user_id": "user123",
+  "viewing_history": [
+    {
+      "title": "나는솔로 시즌 17 1화",
+      "category": "연애/로맨스",
+      "watch_time": "45분",
+      "date": "2024-01-15",
+      "interest_tags": ["연애", "로맨스", "리얼리티"]
+    },
+    {
+      "title": "나는솔로 시즌 17 2화",
+      "category": "연애/로맨스", 
+      "watch_time": "42분",
+      "date": "2024-01-16",
+      "interest_tags": ["연애", "로맨스", "리얼리티"]
+    },
+    {
+      "title": "나는솔로 시즌 17 3화",
+      "category": "연애/로맨스",
+      "watch_time": "48분", 
+      "date": "2024-01-17",
+      "interest_tags": ["연애", "로맨스", "리얼리티"]
+    },
+    {
+      "title": "나는솔로 시즌 16 하이라이트",
+      "category": "연애/로맨스",
+      "watch_time": "35분",
+      "date": "2024-01-18", 
+      "interest_tags": ["연애", "로맨스", "리얼리티"]
+    },
+    {
+      "title": "나는솔로 커플 인터뷰",
+      "category": "연애/로맨스",
+      "watch_time": "28분",
+      "date": "2024-01-19",
+      "interest_tags": ["연애", "로맨스", "인터뷰"]
+    },
+    {
+      "title": "영어 회화 기초 강의",
+      "category": "교육/언어",
+      "watch_time": "25분",
+      "date": "2024-01-20",
+      "interest_tags": ["영어", "교육", "언어학습"]
+    },
+    {
+      "title": "요리 레시피 - 간단한 파스타",
+      "category": "요리/음식",
+      "watch_time": "15분",
+      "date": "2024-01-21",
+      "interest_tags": ["요리", "음식", "레시피"]
+    },
+    {
+      "title": "운동 루틴 - 홈트레이닝",
+      "category": "건강/운동",
+      "watch_time": "20분",
+      "date": "2024-01-22",
+      "interest_tags": ["운동", "건강", "홈트레이닝"]
+    }
+  ],
+  "top_interests": [
+    "연애/로맨스",
+    "리얼리티 프로그램", 
+    "영어 학습",
+    "요리",
+    "운동"
+  ],
+  "total_watch_time": "4시간 38분",
+  "favorite_category": "연애/로맨스"
+} 
